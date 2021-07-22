@@ -1,16 +1,17 @@
 import Vue from 'vue'
 import App from './App.vue'
 import VueRouter from 'vue-router'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 import LoginComponent from './pages/Login/LoginComponent' 
-const Bar = { template: '<div>bar</div>' }
+import HomeComponent from './pages/Home/HomeComponent' 
 
 Vue.config.productionTip = false
 Vue.use(VueRouter)
 
 const routes = [
-  { path: '/', component: LoginComponent  },
-  { path: '/oi', component: Bar  },
+  { path: '/', name: 'login', component: LoginComponent },
+  { path: '/home',  name: 'home', component: HomeComponent },
   
 ]
 
