@@ -15,7 +15,7 @@
 
         width: 400px;
         height: 450px;
-        background-color: $purple;
+        background: linear-gradient(rgba(182,15,237,1) 30%, rgba(0,212,255,1) 100%);
         border-radius: 7px;
         border: 1.5px solid black;
 
@@ -37,6 +37,11 @@
 
             button {
                 margin-top: 15px;
+                background-color: rgba(182,15,237,0.9);
+            }
+
+            label {
+                color: $white;
             }
         }
     }

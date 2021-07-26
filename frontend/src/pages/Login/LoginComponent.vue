@@ -16,7 +16,7 @@
                             <label for="exampleInputPassword1">Password</label>
                             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                         </div>
-                        <button type="submit" class="btn btn-primary">Log In</button>
+                        <button type="submit" class="btn btn-primary" @click.prevent="login">Log In</button>
                     </form>
                 </div>            
             </div>
@@ -27,6 +27,18 @@
 <script>
 
 export default {
+    name: 'LoginCompenent',
+
+    data(){
+        return{
+
+        }
+    },
+    methods: {
+        login(){
+            this.$router.push({name: 'home'});
+        }
+    }
 
 }
 </script>
