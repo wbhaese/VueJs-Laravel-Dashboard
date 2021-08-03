@@ -1,4 +1,4 @@
-# VueJs-Laravel-Dashboard
+# VueJs-Symfony-Dashboard
 
 Dashboard integrating Laravel and VueJS. Showing main data on page.
 
