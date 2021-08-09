@@ -1,6 +1,6 @@
 # VueJs-Symfony-Dashboard
 
-Dashboard integrating Laravel and VueJS. Showing main data on page.
+Dashboard integrating Symfony and VueJS.
 
 Login screen:
 
