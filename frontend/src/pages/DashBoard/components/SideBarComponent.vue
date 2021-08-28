@@ -12,11 +12,10 @@
 
         <div class="menu">
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li><router-link :to="{name: 'home'}"><i class="fa fa-home" /> Início</router-link></li>
+                <li><router-link :to="{name: 'products'}"><i class="fa fa-box" /> Produtos</router-link></li>
+                <li><router-link :to="{name: 'vendas'}"><i class="fa fa-store" /> Vendas</router-link></li>
+                <li><router-link :to="{name: 'realtorios'}"><i class="fa fa-chart-bar" /> Relatórios</router-link></li>
             </ul>
 
         </div>
@@ -32,6 +31,7 @@ export default {
 
 <style lang="scss">
     .sidebar{
+
         .top{
             width: 100%;
             display: flex;
@@ -72,6 +72,24 @@ export default {
                     margin: 0;
                     font-size: 10px;
                 }
+            }            
+        }
+
+        .menu {
+            margin-top: 15px;
+            padding: 10px 20px;
+
+            ul li {
+                list-style-type: none;
+                padding-left: 0rem !important;
+                margin: 15px 0;
+                font-size: 16px;
+                font-weight: 200;
+            }
+            
+            a {
+                color: #FFF;
+                text-decoration: none;
             }
         }
     }
