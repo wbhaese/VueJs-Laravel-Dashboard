@@ -1,19 +1,31 @@
 <template>
     <div class="my_cards">
         <div class="top content">
-            <h3>Cliente</h3>
-            <p class="percentagem"><i class="fa fa-arrow-up"></i> 7%</p>
+            <h3>{{ type }}</h3>
+            <p class="percentagem"><i class="fa fa-arrow-up"></i> {{ percentagem }}</p>
         </div>
 
         <div class="footer content">
-            <i class="fa fa-users"></i>
-            <p class="qtd">9570</p>
+            <i :class="['fa ico', icon]"></i>
+            <p class="qtd">{{ qtd }}</p>
         </div>
     </div>
     
 </template>
 
 <script>
+
+export default {
+    name: 'CardsComponent',
+    props: {
+        type: String, 
+        percentagem: String,
+        icon: String,
+        qtd: String,
+    }
+
+
+}
 
 </script>
 
@@ -23,7 +35,7 @@
     .my_cards {
         display: flex;
         flex-direction: column; 
-        width: 300px; 
+        width: 100%; 
         background-color: $purple;
         padding: 15px;
         border-radius: 7px;
@@ -37,9 +49,23 @@
 
         .top {
             
+            .percentagem {
+                color: $green;
+            }
+
+            
         }
 
         .footer {
+
+            .ico {
+                font-size: 40px;
+            }
+
+            .qtd {
+                font-size: 25px;
+                margin: 0;
+            }
             
         }
 
