@@ -40,6 +40,7 @@ export default {
         padding: 15px;
         border-radius: 7px;
         color: #FFF;
+        margin-top: 5px;
         
         .content {
             display: flex;
@@ -52,7 +53,6 @@ export default {
             .percentagem {
                 color: $green;
             }
-
             
         }
 

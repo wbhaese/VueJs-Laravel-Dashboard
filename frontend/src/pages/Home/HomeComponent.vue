@@ -5,7 +5,7 @@
                 <p>Início</p>
             </header>
 
-            <div>
+            <div >
                 <div class="row">
                     <div class="col-12 col-md-3">
                         <CardsComponent 
@@ -46,7 +46,13 @@
             
             </div>
 
-
+            <div class="mt-5">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <ListsComponent />
+                    </div>
+                </div>
+            </div>
         </div>
     </DashBoardComponent>
 </template>
@@ -54,11 +60,14 @@
 <script>
 import DashBoardComponent from '../DashBoard/DashBoardComponent';
 import CardsComponent from '../../components/CardsComponent';
+import ListsComponent from '../../components/ListsComponent';
 
 export default {
+    name: 'HomeComponent',
     components: {
         DashBoardComponent,
         CardsComponent,
+        ListsComponent,
     }
 
 }
