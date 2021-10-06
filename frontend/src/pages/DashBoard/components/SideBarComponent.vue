@@ -13,9 +13,10 @@
         <div class="menu">
             <ul>
                 <li><router-link :to="{name: 'home'}"><i class="fa fa-home" /> Início</router-link></li>
+                <li><router-link :to="{name: 'clients'}"><i class="fa fa-box" /> Clientes</router-link></li>
                 <li><router-link :to="{name: 'products'}"><i class="fa fa-box" /> Produtos</router-link></li>
                 <li><router-link :to="{name: 'vendas'}"><i class="fa fa-store" /> Vendas</router-link></li>
-                <li><router-link :to="{name: 'realtorios'}"><i class="fa fa-chart-bar" /> Relatórios</router-link></li>
+                <li><router-link :to="{name: 'relatorios'}"><i class="fa fa-chart-bar" /> Relatórios</router-link></li>
             </ul>
 
         </div>
