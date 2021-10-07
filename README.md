@@ -1,4 +1,4 @@
-# VueJs-Symfony-Dashboard
+# VueJs-Laravel-Dashboard
 
 Dashboard integrating Symfony and VueJS.
 
