@@ -1,8 +1,8 @@
 <template>
     <div class="navbar">
         <h3 class="logo">
-            <i class="fa fa-star" />
-            Logo Marca
+            <i class="fab fa-hubspot" />
+            Haese Sistemas
         </h3>
         <a 
             href="" 

@@ -12,7 +12,7 @@
                             :type="'Clientes'" 
                             :percentagem="'7%'" 
                             :icon="'fa-users'"
-                            :qtd="'7590'"                        
+                            :qtd="clients.length"                        
                         />
                     </div>
 
@@ -21,7 +21,7 @@
                             :type="'Produto'" 
                             :percentagem="'57%'" 
                             :icon="'fa-box'"
-                            :qtd="'350'"                        
+                            :qtd="products.length"                        
                         />
                     </div>
 
@@ -30,7 +30,7 @@
                             :type="'Serviços'" 
                             :percentagem="'43%'" 
                             :icon="'fa-store'"
-                            :qtd="'543'"                        
+                            :qtd="543"                        
                         />
                     </div>
 
@@ -39,7 +39,7 @@
                             :type="'Relatórios'" 
                             :percentagem="'3%'" 
                             :icon="'fa-chart-bar'"
-                            :qtd="'123'"                        
+                            :qtd="123"                        
                         />
                     </div>
                 </div>
