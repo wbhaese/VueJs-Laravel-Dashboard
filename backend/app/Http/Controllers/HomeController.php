@@ -9,6 +9,28 @@ class HomeController extends Controller
 {
     public function index()
     {
-        return response()->json(['status'=>true]);
+            
+        $clients = [
+            [
+                'id' => 1,
+                'name' => 'José Da Silva',
+                'email' => 'jose@mail.com',
+            ],
+        ];
+
+        $products = [
+            [
+                'id' => 1,
+                'name' => 'Tablet',
+                'value' => '3.400',
+            ]
+        ];
+
+        return response()->json([
+            'status' => true,
+            'msg' => 'test',
+            'clients' => $clients,
+            'products' => $products,
+        ]);
     }
 }

@@ -50,14 +50,14 @@
                 <div class="row">
                     <div class="col-12 col-md-6">
                         <ListsComponent 
-                            :data="users" 
+                            :data="clients" 
                             description="Clientes"
                             :columns="['Nome', 'E-mail']"
                         />
                     </div>
                     <div class="col-12 col-md-6">
                         <ListsComponent 
-                            :data="users" 
+                            :data="products" 
                             description="Produtos"
                             :columns="['Nome', 'Valor']"
                         />
@@ -80,7 +80,8 @@ export default {
     name: 'HomeComponent',
     data(){
         return {
-            users: [],
+            clients: [],
+            products: [],
         }
     },
     //call functions inside on page mount (loaded)
@@ -89,12 +90,15 @@ export default {
     },
     methods:{
         async getUsers(){
-            const response = await axios.get('https://jsonplaceholder.typicode.com/users');
-            if (response.status == 200){
-                this.users = response.data
-            }else{
-                console.log('error')
+            const response = await axios.get('/');
 
+            if (response.status == 200){
+                console.log('response', response.data.clients);
+                this.clients = response.data.clients
+                this.products = response.data.products
+
+            }else{
+                console.log('error');
             }
         }
     },    
